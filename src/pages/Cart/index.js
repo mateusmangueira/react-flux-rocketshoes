@@ -1,5 +1,9 @@
 import React from 'react';
-import { MdRemoveCircleOutline, MdAddCircleOutline, MdDelete } from 'react-icons/md';
+import {
+  MdRemoveCircleOutline,
+  MdAddCircleOutline,
+  MdDelete,
+} from 'react-icons/md';
 
 import { Container, ProductTable, Total } from './styles';
 
@@ -20,8 +24,9 @@ export default function Cart() {
           <tr>
             <td>
               <img
-                src='https://static.netshoes.com.br/produtos/tenis-nike-downshifter-9-masculino/26/HZM-1276-026/HZM-1276-026_detalhe2.jpg?ims=326x'
-                alt='Tenis' />
+                src="https://static.netshoes.com.br/produtos/tenis-nike-downshifter-9-masculino/26/HZM-1276-026/HZM-1276-026_detalhe2.jpg?ims=326x"
+                alt="Tenis"
+              />
             </td>
             <td>
               <strong>TENIS DOIDAO</strong>
@@ -29,12 +34,12 @@ export default function Cart() {
             </td>
             <td>
               <div>
-                <button type='button'>
-                  <MdRemoveCircleOutline size={20} color='#7159c1' />
+                <button type="button">
+                  <MdRemoveCircleOutline size={20} color="#7159c1" />
                 </button>
-                <input type='number' readOnly value={2} />
-                <button type='button'>
-                  <MdAddCircleOutline size={20} color='#7159c1' />
+                <input type="number" readOnly value={2} />
+                <button type="button">
+                  <MdAddCircleOutline size={20} color="#7159c1" />
                 </button>
               </div>
             </td>
@@ -42,15 +47,15 @@ export default function Cart() {
               <strong>R$258,00</strong>
             </td>
             <td>
-              <button type='button'>
-                <MdDelete size={20} color='#7159c1' />
+              <button type="button">
+                <MdDelete size={20} color="#7159c1" />
               </button>
             </td>
           </tr>
         </tbody>
       </ProductTable>
       <footer>
-        <button type='button'>Finalizar pedido</button>
+        <button type="button">Finalizar pedido</button>
         <Total>
           <span>TOTAL</span>
           <strong>R$590,00</strong>
@@ -58,5 +63,4 @@ export default function Cart() {
       </footer>
     </Container>
   );
-
 }

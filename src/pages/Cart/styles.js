@@ -27,7 +27,6 @@ export const Container = styled.div`
       }
     }
   }
-
 `;
 
 export const ProductTable = styled.table`
