@@ -4,7 +4,7 @@ import produce from 'immer';
 export default function cart(state = [], action) {
   // Todos reducer ouvem todas as actions, por isso precisa o switch case para selecionar qual sera disparada pelo Type
   switch (action.type) {
-    case 'ADD_TO_CART':
+    case '@cart/ADD':
       return produce(state, draftState => {
         const productIndex = draftState.findIndex(
           p => p.id === action.product.id
@@ -19,7 +19,7 @@ export default function cart(state = [], action) {
         }
       });
 
-    case 'REMOVE_FROM_CART':
+    case '@cart/REMOVE':
       return produce(state, draftState => {
         const productIndex = draftState.findIndex(p => p.id === action.id);
         if (productIndex >= 0) {
