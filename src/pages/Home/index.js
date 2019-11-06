@@ -65,6 +65,7 @@ const mapStateToProps = state => ({
     return amount;
   }, {}),
 });
+
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
 
